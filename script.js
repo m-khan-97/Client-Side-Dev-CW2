@@ -19,6 +19,11 @@ $(document).ready(function () {
     else if (now.getHours() < 18) greeting = "Good Afternoon!";
     else greeting = "Good Evening!";
 
+       let greeting2 = "Hello!";
+    if (now.getHours() < 12) greeting = "Good Morning!";
+    else if (now.getHours() < 18) greeting = "Good Afternoon!";
+    else greeting = "Good Evening!";
+
     $("#timeDisplay")
       .hide()
       .html(`<strong>${greeting}</strong><br>Today is ${dateString}<br>Current time: ${timeString}`)
